@@ -1,76 +1,53 @@
 # 🛍️ E-Shopping App (OOP Practice)
 
 ## 📘 Overview
-This is a simple **console-based e-commerce application** built using **Object-Oriented Programming (OOP)** principles in Python.  
-It allows **Customers** to browse and purchase products, and **Sellers** to add and manage their products.
+This is a **console-based e-commerce application** developed in **Python** using **Object-Oriented Programming (OOP)** principles.  
+It allows **customers** to browse and purchase products, and **sellers** to add and manage their listings.
 
-This project demonstrates key OOP concepts such as:
-- 🧩 **Encapsulation**
-- 🧠 **Abstraction**
-- 🏗️ **Inheritance**
-- ⚙️ **Composition**
+This project was built as a hands-on exercise to strengthen understanding of core OOP concepts such as **abstraction**, **encapsulation**, **inheritance**, and **composition**.
 
 ---
 
-## ⚙️ Features
-
-### 👩‍💼 Seller
-- Create a seller account  
-- Add products to the shop  
-- Remove existing products  
-- View all available products  
-
-### 🧑‍💻 Customer
-- Create a customer account  
-- View available products  
-- Add products to the cart  
-- Remove products from the cart  
-- View cart and total price  
-- Pay the bill  
-
-### 🏬 Shop
-- Maintains a product list  
-- Automatically manages stock levels  
-- Hides out-of-stock products  
+## 🧩 Problem Statement
+The task was to create an e-shopping application using OOP where:
+- 🧑‍💻 Customers can create new accounts using email and password  
+- 🛒 Sellers can create new accounts and publish products for sale  
+- 👀 Customers can view all available products and place orders  
+- 📦 The system monitors product stock and hides out-of-stock items  
 
 ---
 
-## 🧩 Class Structure
-
-| Module | Description |
-|--------|--------------|
-| **main.py** | Entry point of the app. Handles menu navigation for seller and customer. |
-| **users.py** | Contains abstract `User` class and its subclasses `Customer` and `Seller`. |
-| **product.py** | Defines `Product` (collection) and `ProductItem` (single item). |
-| **orders.py** | Manages the `Order` class for customer cart functionality. |
-| **shop.py** | Represents the shop that contains all available products. |
+## ⚙️ Key Features
+- **Seller Management:** Add, view, and remove products  
+- **Customer Operations:** View products, add items to cart, and complete purchases  
+- **Stock Monitoring:** Automatically adjusts product quantities and hides unavailable items  
+- **Cart System:** Tracks selected items and calculates total price  
+- **Modular Design:** Organized into multiple classes and files following OOP principles  
 
 ---
 
-## 🧠 OOP Concepts Used
-
-- **Abstraction:** `User` is an abstract base class for both `Customer` and `Seller`.  
-- **Encapsulation:** Each class manages its own data and methods.  
+## 🧠 OOP Concepts Applied
+- **Abstraction:** Common user attributes are defined in an abstract `User` class  
+- **Encapsulation:** Each class manages its own state and behavior  
+- **Inheritance:** `Customer` and `Seller` extend from `User`  
 - **Composition:**  
-  - `Shop` has a `Product` list.  
-  - `Customer` has an `Order`.  
-- **Polymorphism (ready for extension):** Both `Customer` and `Seller` inherit from `User`.
+  - A `Shop` contains a collection of `Product` objects  
+  - A `Customer` owns an `Order` representing their cart  
 
 ---
 
 ## ▶️ How to Run
-
 1. Clone or download this repository  
 2. Open a terminal in the project folder  
-3. Run the program:
+3. Run the main program:
    ```bash
    python main.py
+
+
 
 ## 👩‍💻 Author
 
 **Tanzina**  
 
 ---
-
-✨ *This project is made for practicing Object-Oriented Programming (OOP) in Python.* ✨
-
+*This project is made for practicing Object-Oriented Programming (OOP) in Python.* 
